@@ -7,7 +7,7 @@ const NavBar = () => {
         <section>
             <Navbar bg='primary' variant='dark' expand='lg' className='mt-4 mb-4 rounded'>
                 <Container>
-                    <NavbarBrand as={NavLink} to="/">NavBar</NavbarBrand>
+                    <NavbarBrand as={NavLink} to="/">Blog.app</NavbarBrand>
                     <Nav className='d-flex justify-content-end'>
                         <Nav.Link as={NavLink} to='/'>Home</Nav.Link>
                         <Nav.Link as={NavLink} to='/about'>About</Nav.Link>
