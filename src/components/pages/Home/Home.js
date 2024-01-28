@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import styles from './Home.module.scss'
-import { getAllPosts } from '../../../redux/postsRedux';
+import { getAllPosts } from '../../../redux/postsRedux.js';
 import { Button, Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
