@@ -10,6 +10,7 @@ const NavBar = () => {
                     <NavbarBrand as={NavLink} to="/">Blog.app</NavbarBrand>
                     <Nav className='d-flex justify-content-end'>
                         <Nav.Link as={NavLink} to='/'>Home</Nav.Link>
+                        <Nav.Link as={NavLink} to='/categories'>Categories</Nav.Link>
                         <Nav.Link as={NavLink} to='/about'>About</Nav.Link>
                     </Nav>
                 </Container>

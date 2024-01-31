@@ -3,6 +3,7 @@ import styles from './Home.module.scss'
 import { getAllPosts } from '../../../redux/postsRedux.js';
 import { Button, Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { dateToStr } from '../../../utils/dateToStr.js';
 
 
 const Home = (props) => {
@@ -27,7 +28,8 @@ const Home = (props) => {
                             <Card.Body>
                                 <Card.Title className='mb-3'>{post.title}</Card.Title>
                                 <Card.Text className='mb-1'><strong>Author:</strong>{post.author}</Card.Text>
-                                <Card.Text className='mb-2'><strong>Published:</strong>{post.publishedDate}</Card.Text>
+                                <Card.Text className='mb-2'><strong>Published:</strong>{dateToStr(new Date(post.publishedDate))}</Card.Text>
+                                <Card.Text className='mb-2'><strong>Category:</strong>{post.category}</Card.Text>
                                 <Card.Text className='mb-3'>{post.shortDescription}</Card.Text>
                                 <Link to={`/post/${post.id}`}>
                                     <Button>Read more</Button>

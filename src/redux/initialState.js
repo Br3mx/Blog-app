@@ -5,7 +5,8 @@ const initialState = {
         title: 'Article title I',
         shortDescription: 'Short description of the article..',
         content: 'Main content of the article',
-        publishedDate: '02-02-2022',
+        publishedDate: new Date('02/02/2022'),
+        category: 'Sport',
         author: 'John Doe'
 
       },
@@ -14,7 +15,8 @@ const initialState = {
         title: 'Article title II',
         shortDescription: 'Short description of the article..',
         content: 'Main content of the article',
-        publishedDate: '02-02-2022',
+        publishedDate: new Date('12/02/2024'),
+        category: 'News',
         author: 'John Doe'
       },
       {
@@ -22,12 +24,18 @@ const initialState = {
         title: 'Article title III',
         shortDescription: 'Short description of the article..',
         content: 'Main content of the article',
-        publishedDate: '02-02-2022',
+        publishedDate: new Date('08/03/2024'),
+        category: 'Movies',
         author: 'John Doe'
       },
-      
-
+    ],
+      categories: [
+        'Sport', 
+        'News', 
+        'Movies'
     ]
+
+    
 };
 
 export default initialState;
