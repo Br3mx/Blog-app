@@ -10,6 +10,7 @@ import Header from "./components/views/Header/Header";
 import Footer from "./components/views/Footer/Footer";
 import Categories from "./components/pages/Categories/Categories";
 import SinglePostCategory from "./components/features/PostCategory/SinglePostCategory";
+import NotFoundCategory from "./components/pages/NotFoundCategory/NotFoundCategory";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/post/:postId" element={<SinglePages/>} />
                 <Route path="/categories" element={<Categories/>} />
                 <Route path="/category/:category" element={<SinglePostCategory/>} />
+                <Route path="/not-found" element={<NotFoundCategory/>}/>
                 <Route path="*" element = {<NotFound/>} />
             </Routes>
           <Footer/>

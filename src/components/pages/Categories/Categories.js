@@ -15,7 +15,7 @@ const Categories = () => {
                     <ListGroup.Item key={index}>
                         <Link to={`/category/${category}`}>{category}</Link>
                     </ListGroup.Item>
-                ))};
+                ))}
             </ListGroup>
         </section>
     )

@@ -3,11 +3,17 @@ import { Link, Navigate, useParams } from "react-router-dom"
 import { getPostByCategory } from "../../../redux/postsRedux";
 import { Button, Card, Col, Row } from "react-bootstrap";
 import { dateToStr } from "../../../utils/dateToStr";
+import { getPostCategory } from "../../../redux/categoriesRedux";
 
 const SinglePostCategory = () => {
     const { category } = useParams();
+    
     const categoryData = useSelector(state => getPostByCategory(state, category));
+    const postCategoryData = useSelector(state => getPostCategory(state, category));
     if(!categoryData) return <Navigate to='/'/>
+    if(!postCategoryData) return <Navigate to='/not-found'/>
+
+   
     
     return (
         <Row>
